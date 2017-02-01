@@ -1,0 +1,7 @@
+    def base_url(self, url):
+        if not isinstance(url, str):
+            raise TypeError("base url must be a string")
+        elif "http" not in url:
+            raise ValueError("url should start with 'http' or 'https'")
+            
+            
