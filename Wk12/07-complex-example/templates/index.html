@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title>Check variants in a gene</title>
+	<style>
+	h2 { color: green;}
+	</style>
+
+</head>
+<body>
+<h2>Check common variants in a human gene</h2>
+
+<form method="GET" action="/">
+    Gene name: <input type="text" name="name" {% if name %} value="{{ name }}" {% endif %}>
+    <input type="submit" value="Go">
+</form>
+
+{% if name %}
+
+    <h2>Results for {{ name }}</h2>
+    	<img src="/logo/{{ name }}.png">
+    </body>
+    </html>
+
+{% endif %}
